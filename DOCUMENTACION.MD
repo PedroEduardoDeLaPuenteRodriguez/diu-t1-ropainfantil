@@ -2,104 +2,114 @@
 
 ### 1.1 Importancia del diseño centrado en el usuario
 
-El diseño de la aplicación Pequeños Pasos se plantea desde las necesidades de las personas que compran ropa infantil. La interfaz debe permitir consultar prendas, encontrar tallas y completar el proceso de compra de forma clara y sencilla.
+El diseño de Pequeños Pasos parte de las necesidades de quienes compran ropa infantil. La interfaz debe permitir consultar prendas, encontrar la talla correcta y completar la compra de forma clara y sencilla.
 
-El diseño centrado en el usuario ayuda a organizar la información y las funciones de acuerdo con las tareas que las personas necesitan realizar. Por ello, el prototipo prioriza una navegación comprensible, controles reconocibles y una presentación coherente entre pantallas.
+El diseño centrado en el usuario organiza la información y las funciones según las tareas reales de las personas. Por eso el prototipo prioriza una navegación comprensible, controles reconocibles y una presentación coherente entre pantallas.
 
 ### 1.2 Objetivos del proyecto
 
-El objetivo general es diseñar un prototipo de aplicación Android para la tienda infantil Pequeños Pasos, aplicando los principios de Material Design 3.
+**Objetivo general:** diseñar un prototipo navegable de aplicación Android para la tienda infantil Pequeños Pasos, aplicando los principios de Material Design 3 (M3).
 
-Los objetivos específicos son:
+**Objetivos específicos de diseño:**
 
-- Diseñar las siete pantallas solicitadas para el prototipo.
+- Diseñar las siete pantallas obligatorias del prototipo.
 - Facilitar la exploración del catálogo de ropa infantil de 0 a 14 años.
-- Permitir que las personas consulten productos, seleccionen opciones y revisen el carrito.
-- Mantener una estructura visual coherente mediante colores, tipografía, iconografía y componentes reutilizables.
-- Crear un prototipo navegable que permita comprobar los principales recorridos de uso.
+- Permitir consultar productos, elegir talla y revisar el carrito.
+- Mantener coherencia visual mediante color, tipografía, iconografía y componentes reutilizables.
 
-Como metas propuestas para evaluar el prototipo, se plantean los siguientes valores:
+**Objetivos medibles (se evaluarán en las pruebas de la sección 4):**
 
-- Que al menos el 80 % de las personas participantes complete el recorrido de compra de prueba en menos de dos minutos.
-- Que al menos el 90 % localice un producto y seleccione una talla correctamente.
-- Que al menos el 90 % complete las tareas de prueba sin ayuda.
+| Nº | Objetivo medible | Indicador | Meta |
+|----|------------------|-----------|------|
+| O1 | Completar el recorrido de compra de prueba (Inicio → Confirmación) | Tiempo por persona | ≥ 80 % de participantes en menos de 2 minutos |
+| O2 | Localizar un producto y seleccionar una talla correctamente | Tarea completada con la talla pedida | ≥ 90 % de participantes |
+| O3 | Completar las tareas de prueba sin ayuda | Tareas sin intervención del observador | ≥ 90 % de las tareas |
 
-Estas cifras son objetivos de evaluación, no resultados obtenidos.
 
 ### 1.3 Beneficios esperados
 
-Se espera que el prototipo:
+- Consulta del catálogo más sencilla.
+- Menos dificultad para encontrar productos y tallas.
+- Información clara de cada prenda.
+- Revisión de la selección antes de pagar.
+- Experiencia visual consistente en todas las pantallas.
 
-- Haga más sencilla la consulta del catálogo.
-- Reduzca la dificultad para encontrar productos y tallas.
-- Presente de forma clara la información de cada prenda.
-- Permita revisar los productos seleccionados antes de continuar con la compra.
-- Ofrezca una experiencia visual consistente en las distintas pantallas.
+---
 
 ## 2. Investigación y análisis de usuarios
 
 ### 2.1 Demografía y segmentación
 
-La aplicación está dirigida a personas que compran ropa para niños y niñas de entre 0 y 14 años.
+La app se dirige a personas que compran ropa para niños y niñas de 0 a 14 años:
 
-Se consideran, de forma general, estos grupos:
-
-- Madres, padres y tutores que compran ropa infantil.
+- Madres, padres y tutores que compran ropa infantil con frecuencia.
 - Familiares que compran prendas como regalo.
 - Personas que necesitan consultar modelos, tallas y precios antes de decidir.
 
-La segmentación es inicial y se basa en el público definido para el proyecto. No procede de una encuesta o estudio de campo realizado.
 
 ### 2.2 Necesidades y comportamientos
 
-| Necesidad | Comportamiento o tarea relacionada | Respuesta de diseño |
-|---|---|---|
-| Encontrar prendas | Explorar el catálogo y sus categorías | Organizar los productos para facilitar su consulta |
-| Conocer los detalles | Abrir la ficha de una prenda | Mostrar la información del producto de forma clara |
-| Elegir una talla | Consultar y seleccionar una opción disponible | Presentar las tallas como opciones identificables |
-| Revisar la selección | Consultar los productos añadidos | Incorporar una pantalla de carrito |
-| Navegar con facilidad | Pasar de una sección a otra | Mantener una estructura de navegación coherente |
+| Necesidad | Comportamiento o tarea | Respuesta de diseño |
+|-----------|------------------------|---------------------|
+| Encontrar prendas | Explorar el catálogo por categorías | Categorías por edad en Inicio y filtros en Catálogo |
+| Conocer los detalles | Abrir la ficha de una prenda | Carrusel de fotos y precio visible en Detalle |
+| Elegir talla | Consultar y seleccionar una opción disponible | Selector de talla propio y guía de tallas |
+| Revisar la selección | Consultar los productos añadidos | Pantalla Carrito con resumen del importe |
+| Navegar con facilidad | Pasar de una sección a otra | Navigation bar con tres destinos fijos |
 
-Estas necesidades son hipótesis de diseño que deberán validarse con pruebas.
 
-### 2.3 Perfiles de usuario
+### 2.3 Perfiles de usuario (personas)
 
-Los siguientes perfiles son ejemplos hipotéticos para orientar el diseño. No representan personas entrevistadas.
+Los perfiles son ficticios y sirven para orientar el diseño. No representan personas entrevistadas.
 
-**Perfil 1: Laura, 34 años**
+#### Persona 1: Laura Martín, 34 años
 
-- **Contexto:** compra ropa para sus hijos.
-- **Necesidad principal:** encontrar prendas y tallas sin recorrer demasiadas pantallas.
-- **Expectativa:** consultar los detalles y revisar la selección con rapidez.
+- **Contexto:** madre de dos hijos (3 y 8 años). Compra ropa desde el móvil, a ratos libres y con poco tiempo.
+- **Objetivos:** encontrar prendas y tallas sin recorrer demasiadas pantallas; repetir compras con rapidez.
+- **Frustraciones:** no saber qué talla corresponde a la edad de cada hijo; tallas que no coinciden entre marcas; procesos de pago largos.
 
-**Perfil 2: Antonio, 62 años**
+#### Persona 2: Antonio Ruiz, 62 años
 
-- **Contexto:** compra ropa infantil para sus nietos.
-- **Necesidad principal:** comprender fácilmente las opciones disponibles.
-- **Expectativa:** una interfaz legible, con controles claros y navegación sencilla.
+- **Contexto:** abuelo que compra un regalo para sus nietos. Usa el móvil con poca frecuencia y no conoce las tallas actuales.
+- **Objetivos:** entender las opciones disponibles y comprar sin ayuda de otra persona.
+- **Frustraciones:** texto pequeño, iconos sin etiqueta, botones difíciles de pulsar y no saber si la compra se ha completado.
 
 ### 2.4 Análisis de aplicaciones similares
 
-El material disponible no identifica aplicaciones concretas para comparar. Por tanto, este apartado queda pendiente de completar con una revisión real y documentada.
+| App | Qué hace bien | Qué hace mal | Qué me llevo |
+|-----|---------------|--------------|--------------|
+| H&M | _(completar tras probar la app)_ | _(completar)_ | _(completar)_ |
+| Zalando | _(completar)_ | _(completar)_ | _(completar)_ |
+| Zara | _(completar)_ | _(completar)_ | _(completar)_ |
 
-Para realizarla, se recomienda registrar por cada aplicación:
+### 2.5 Hallazgos clave (insights) y decisiones de diseño
 
-| Aplicación | Navegación | Presentación del catálogo | Selección de tallas | Carrito | Observaciones |
-|---|---|---|---|---|---|
-| Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
-| Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
-| Pendiente | Pendiente | Pendiente | Pendiente | Pendiente | Pendiente |
+| Nº | Insight | Decisión de diseño |
+|----|---------|--------------------|
+| 1 | Quien compra duda con las tallas, sobre todo si compra para otra persona | Botón «Guía de tallas» en el Detalle, que abre un bottom sheet |
+| 2 | Hay que encontrar prendas rápido, por edad antes que por tipo de prenda | Categorías por edad (Bebé 0-24 m, Niña, Niño) en Inicio y filter chips en Catálogo |
+| 3 | Al borrar un producto del carrito por error, la persona no quiere empezar de nuevo | Snackbar con acción «Deshacer» al eliminar |
+| 4 | Un formulario de pago largo genera abandono y errores | Formulario corto en Checkout, con mensajes de ayuda y estado de error visible |
+| 5 | Personas mayores necesitan controles grandes y claros | Áreas táctiles ≥ 48×48 dp, texto legible y navigation bar con etiquetas |
 
-No se atribuyen características a aplicaciones que no se han analizado.
+## 3. Diseño de la interfaz
 
-### 2.5 Hallazgos clave
+### 3.1 Estructura y navegación
 
-A partir de las necesidades planteadas para el proyecto, se establecen estos criterios de diseño:
+La barra de navegación tiene tres destinos: **Inicio**, **Catálogo** y **Favoritos o Perfil**. El resto de pantallas se recorren dentro del flujo de compra.
 
-1. **Catálogo accesible:** la consulta de productos debe ser directa.
-2. **Información comprensible:** los detalles de las prendas deben poder localizarse fácilmente.
-3. **Selección clara:** las opciones de talla deben distinguirse visualmente.
-4. **Revisión de la compra:** el carrito debe permitir comprobar los productos seleccionados.
-5. **Consistencia:** las pantallas deben compartir patrones visuales y de interacción.
+```mermaid
+flowchart TD
+    NB{{"Barra de navegación"}}
 
+    NB --> A["Inicio"]
+    NB --> B["Catálogo"]
+    NB --> G["Favoritos o Perfil"]
 
+    A --> B
+    B --> C["Detalle del producto"]
+    C --> D["Carrito"]
+    D --> E["Checkout"]
+    E --> F["Confirmación"]
+    F --> A
+```

@@ -1,0 +1,53 @@
+{
+"proyecto": "Pequeños Pasos",
+"propietario": "PedroEduardoDeLaPuenteRodriguez",
+"colorSemilla": "#1F6A9E",
+"generadoCon": "Material Theme Builder",
+"esquemas": {
+    "claro": {
+    "primary": "#1F6A9E",
+    "onPrimary": "#FFFFFF",
+    "primaryContainer": "#CFE5FF",
+    "onPrimaryContainer": "#001D34",
+
+    "secondary": "#51606F",
+    "onSecondary": "#FFFFFF",
+    "secondaryContainer": "#D4E4F6",
+    "onSecondaryContainer": "#0D1D2A",
+
+    "tertiary": "#8B5000",
+    "onTertiary": "#FFFFFF",
+    "tertiaryContainer": "#FFDCBE",
+    "onTertiaryContainer": "#2C1600",
+
+    "error": "#BA1A1A",
+    "onError": "#FFFFFF",
+    "errorContainer": "#FFDAD6",
+    "onErrorContainer": "#410002",
+
+    "background": "#F8F9FF",
+    "onBackground": "#191C20",
+
+    "surface": "#F8F9FF",
+    "onSurface": "#191C20",
+    "surfaceVariant": "#DEE3EB",
+    "onSurfaceVariant": "#42474E",
+
+    "surfaceContainerLowest": "#FFFFFF",
+    "surfaceContainerLow": "#F2F3FA",
+    "surfaceContainer": "#ECEEF4",
+    "surfaceContainerHigh": "#E6E8EE",
+    "surfaceContainerHighest": "#E1E2E9",
+
+    "outline": "#72777F",
+    "outlineVariant": "#C2C7CF",
+
+    "inverseSurface": "#2E3135",
+    "inverseOnSurface": "#EFF0F7",
+    "inversePrimary": "#9ACBFF",
+
+    "scrim": "#000000",
+    "shadow": "#000000"
+    }
+    }
+}

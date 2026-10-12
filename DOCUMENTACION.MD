@@ -102,14 +102,34 @@ La barra de navegación tiene tres destinos: **Inicio**, **Catálogo** y **Favor
 flowchart TD
     NB{{"Barra de navegación"}}
 
-    NB --> A["Inicio"]
-    NB --> B["Catálogo"]
-    NB --> G["Favoritos o Perfil"]
+    A["Inicio"]
+    B["Catálogo"]
+    G["Favoritos"]
+    C["Detalle del producto"]
+    D["Carrito"]
+    E["Checkout"]
+    F["Confirmación"]
+    S(["Bottom sheet: guía de tallas"])
+    SN(["Snackbar: Deshacer"])
 
-    A --> B
-    B --> C["Detalle del producto"]
-    C --> D["Carrito"]
-    D --> E["Checkout"]
-    E --> F["Confirmación"]
-    F --> A
+    NB --> A
+    NB --> B
+    NB --> G
+
+    A -->|"Categoría"| B
+    A -->|"Novedades"| C
+    A -->|"Icono carrito"| D
+    B -->|"Tarjeta de producto"| C
+    B -->|"Icono carrito"| D
+    G -->|"Producto favorito"| C
+
+    C -->|"Guía de tallas"| S
+    S -->|"Cerrar"| C
+    C -->|"Añadir al carrito"| D
+
+    D -->|"Eliminar"| SN
+    SN -->|"Deshacer"| D
+    D -->|"Continuar"| E
+    E -->|"Confirmar pedido"| F
+    F -->|"Volver al inicio"| A
 ```
